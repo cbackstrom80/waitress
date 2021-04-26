@@ -11,6 +11,8 @@ def setup_tracing():
     # instrument our flask app instance eplicitly
     FlaskInstrumentor().instrument_app(app)
 
+
+
 @app.route("/")
 def hello():
     return "Hello, World!"
